@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOSARY SHOP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Tajawal', sans-serif;
+    }
+
+    body {
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* خلفية الفيديو */
+    video#bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* اللوجو */
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 20px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    h1 {
+      font-size: 28px;
+      text-shadow: 0 0 15px #00ffcc;
+      margin-bottom: 25px;
+    }
+
+    /* شكل المربعات */
+    .link-box {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 15px;
+      margin: 15px auto;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px #00ffcc;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .link-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    .link-box i {
+      font-size: 24px;
+      color: #00ffff;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .link-box a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* أيقونة الواتساب الجانبية */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      box-shadow: 0 0 20px #00ffcc;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /* القائمة المنبثقة للأرقام */
+    .whatsapp-menu {
+      position: fixed;
+      bottom: 95px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ffcc;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .whatsapp-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      background: #25D366;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .whatsapp-menu a:hover {
+      background: #1ebe5c;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="bosary.mp4" type="video/mp4">
+  </video>
+
+  <img src="bosary2.jpg" alt="BOSARY Logo" class="logo">
+  <h1>مرحبا بكم في BOSARY SHOP</h1>
+
+  <!-- الفروع -->
+  <div class="link-box">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://chat.whatsapp.com/HkHpQmpyi8vGIGSuyZOHRU?mode=ems_copy_t" target="_blank">متجر البصري الفرع الأول</a>
+  </div>
+
+  <div class="link-box">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://chat.whatsapp.com/JqwNrPd82C2AlFBvYUe83s?mode=ems_copy_t" target="_blank">متجر البصري الفرع الثاني</a>
+  </div>
+
+  <!-- القنوات -->
+  <div class="link-box">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://whatsapp.com/channel/0029VbBGYaj3rZZVBBVACF3w" target="_blank">قناة الشحن</a>
+  </div>
+
+  <div class="link-box">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://whatsapp.com/channel/0029VaiQ7LNBlHpUCIuhRQ15" target="_blank">قناة إثباتات الشحن</a>
+  </div>
+  <div class="link-box">
+    <i class="fa-brands fa-facebook"></i>
+    <a href="https://m.facebook.com/story.php?story_fbid=pfbid0Dk1BqGyKUuKcjGdrkJRSUXweXE1PM8Zuf36XFGavrUcYdec7N9zw8Q591nW4BR4Kl&id=61578018437159&mibextid=Nif5oz" target="_blank">بوست الضمان</a>
+  </div>
+
+  <div class="link-box">
+    <i class="fa-brands fa-tiktok"></i>
+    <a href="https://www.tiktok.com/@elposary?_t=ZS-90ym1sd3YJD&_r=1" target="_blank">قناة التيك توك</a>
+  </div>
+
+  <div class="link-box">
+    <i class="fa-brands fa-telegram"></i>
+    <a href="https://t.me/ELBOSARY_STORE" target="_blank">قناة التليجرام</a>
+  </div>
+
+  <div class="link-box">
+    <i class="fa-brands fa-youtube"></i>
+    <a href="https://youtube.com/@bosary_ff?si=bXQq7PTQ1T85T0F1" target="_blank">قناة اليوتيوب</a>
+  </div>
+
+  <!-- أيقونة واتساب جانبية -->
+  <div class="whatsapp-float" onclick="toggleMenu()">
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+  <!-- قائمة الأرقام -->
+  <div class="whatsapp-menu" id="whatsappMenu">
+    <a href="https://wa.me/201008369106" target="_blank">رقم الشحن</a>
+    <a href="https://wa.me/201143377231" target="_blank">رقم الاحتياطي</a>
+    <a href="https://wa.me/201103196406" target="_blank">رقم المساعد</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('whatsappMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
